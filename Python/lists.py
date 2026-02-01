@@ -36,3 +36,6 @@ list3.sort()
 print(list3)
 list3.sort(key=str.lower)
 print(list3)    
+
+# Lists are mutable, meaning their contents can be changed after creation.
+# Strings are immutable, meaning they cannot be changed after creation.
