@@ -31,3 +31,9 @@ mo = batRegex.search('Batmobile and batman is a comic book hero')
 print(mo.group(1))   
 mo = batRegex.search('Batwoman is a heroine')
 print(mo == None)
+
+batRegex1 = re.compile(r'Bat(wo)?man') #0 or 1 occurrence of wos
+mo1 = batRegex1.search('The Adventures of Batman')
+print(mo1.group())
+mo1 = batRegex1.search('The Adventures of Batwoman')
+print(mo1 == None)  
